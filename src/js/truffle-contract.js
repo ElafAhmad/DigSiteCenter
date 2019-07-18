@@ -364,7 +364,7 @@ var contract = (function(module) {
           }
 
           // web3 0.9.0 and above calls new this callback twice.
-          // Why, I have no idea...
+          // Why, I have no  application...
           var intermediary = function(err, web3_instance) {
             if (err != null) {
               reject(err);
