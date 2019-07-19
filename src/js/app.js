@@ -37,10 +37,10 @@ App = {
     $.getJSON('apple.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract.
       var application = data;
-      App.contracts. application = TruffleContract( application);
+      App.contracts.application = TruffleContract(application);
 
       // Set the provider for our contract.
-      App.contracts. application.setProvider(App.web3Provider);
+      App.contracts.application.setProvider(App.web3Provider);
       console.log(App.web3Provider);
       web3.eth.getAccounts(function(error, accounts) {
         if (error) {
@@ -53,6 +53,6 @@ App = {
 
 
       // Use our contract to retieve  application HERE
-      return App.get application();
+      return App.getapplication();
     });
   }); 

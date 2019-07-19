@@ -45,7 +45,8 @@ mapping (address => uint) public AppleAdress;
         apples[ApplicationID].status = true;
     }
 
-    
-    
+    function getApplications() public view returns (Apple[20] memory) {
+  return apples;
+}
    
 }
