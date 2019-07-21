@@ -53,8 +53,12 @@ mapping (address => uint) public AppleAdress;
              apples[idd].cost, apples[idd].startDate, apples[idd].endDate, apples[idd].status);
     }
 
+        function ArrayLength () public view returns (uint) {
+            return apples.length;
+        }
+
    
-    }
+    }//Contract
     
    
 

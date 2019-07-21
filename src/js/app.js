@@ -41,19 +41,23 @@ App = {
 
       // Set the provider for our contract.
       App.contracts.application.setProvider(App.web3Provider);
-      console.log(App.web3Provider);
-      web3.eth.getAccounts(function(error, accounts) {
-        if (error) {
-          console.log("Error:"+ error);
-        }
+      array1[App.Arraylength()];
+      for ( let i=0; i<App.Arraylength;i++){
+        Array1 = App.getApplications(i);
+      }
+      //console.log(App.web3Provider);
+      // web3.eth.getAccounts(function(error, accounts) {
+      //   if (error) {
+      //     console.log("Error:"+ error);
+      //   }
   
-        var account = accounts[0];
-        console.log(accounts)
-        console.log(account)
+      //   var account = accounts[0];
+      //   // console.log(accounts)
+      //   // console.log(account)
 
 
       // Use our contract to retieve  application HERE
-      return App.getapplication();
+      return Array1;
     });
-  }); 
+  // }); 
 }}
