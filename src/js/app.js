@@ -56,3 +56,4 @@ App = {
       return App.getapplication();
     });
   }); 
+}}

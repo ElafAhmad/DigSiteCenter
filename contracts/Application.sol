@@ -44,9 +44,17 @@ mapping (address => uint) public AppleAdress;
         require(orgCount <= 2,"More than 2 applications start at same date");
         apples[ApplicationID].status = true;
     }
+    
+    function getApplications (uint _id) public view returns
+    (string memory, string memory , uint, uint, uint, string memory, string memory, bool){
+        uint idd = _id;
+        
+        return (apples[idd].name, apples[idd].location, apples[idd].depth, apples[idd].length,
+             apples[idd].cost, apples[idd].startDate, apples[idd].endDate, apples[idd].status);
+    }
 
-    function getApplications() public view returns (Apple[20] memory) {
-  return apples;
-}
    
-}
+    }
+    
+   
+
