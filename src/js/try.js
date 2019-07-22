@@ -2,55 +2,38 @@ App = {
     web3Provider: null,
     contracts: {},
   
-    init: async function() {
-      // Load pets.
-      App.init();
-      // $.getJSON('../applenew.json', function(data) {
-      //   var petsRow = $('#petsRow');
-      //   var petTemplate = $('#petTemplate');
-  
-      //   for (i = 0; i < data.length; i ++) {
-      //     petTemplate.find('.panel-title').text(data[i].name);
-      //     petTemplate.find('img').attr('src', data[i].cost);
-      //     petTemplate.find('.pet-breed').text(data[i].depth);
-      //     petTemplate.find('.pet-age').text(data[i].length);
-      //     petTemplate.find('.pet-location').text(data[i].location);
-      //     petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
-  
-      //     petsRow.append(petTemplate.html());
-      //   }
-      // });
-  
+    init: function() {
       return App.initWeb3();
     },
   
     initWeb3: async function() {//START OF META MASK CHECKS
       // Modern dapp browsers...
-  // if (window.ethereum) {
-  //   App.web3Provider = window.ethereum;
-  //   try {
-  //     // Request account access
-  //     await window.ethereum.enable();
-  //   } catch (error) {
-  //     // User denied account access...
-  //     console.error("User denied account access")
-  //   }
-  // }
-  // // Legacy dapp browsers...
-  // else if (window.web3) {
-  //   App.web3Provider = window.web3.currentProvider;
-  // }
-  // // If no injected web3 instance is detected, fall back to Ganache
-  // else {
-  //   App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
-  // }
-  // web3 = new Web3(App.web3Provider);
-  if (typeof web3 !== 'undefined'){
-    App.web3Provider = web3.currentProvider;
-  } else {
-    App.web3Provider = new Web3.providers.HttpProvider('HTTP://127.0.0.1:7545');
+  if (window.ethereum) {
+    App.web3Provider = window.ethereum;
+    try {
+      // Request account access
+      await window.ethereum.enable();
+    } catch (error) {
+      // User denied account access...
+      console.log(error);
+      console.error("User denied account access")
+    }
   }
-    web3 = new Web3(App.web3Provider);
+  // Legacy dapp browsers...
+  else if (window.web3) {
+    App.web3Provider = window.web3.currentProvider;
+  }
+  // If no injected web3 instance is detected, fall back to Ganache
+  else {
+    App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+  }
+  web3 = new Web3(App.web3Provider);
+  // if (typeof web3 !== 'undefined'){
+  //   App.web3Provider = web3.currentProvider;
+  // } else {
+  //   App.web3Provider = new Web3.providers.HttpProvider('HTTP://127.0.0.1:7545');
+  // }
+  //   web3 = new Web3(App.web3Provider);
 
       return App.initContract();
     },//END OF META MASK CHECKS
@@ -64,13 +47,13 @@ App = {
         // Set the provider for our contract
         App.contracts.Apple.setProvider(App.web3Provider);
       
-           web3.eth.getAccounts(function(error, accounts) {
-        if (error) {
-          console.log(error);
-        }
+        // //    web3.eth.getAccounts(function(error, accounts) {
+        // // if (error) {
+        // //   console.log(error);
+        //  }
       
-        var account = accounts[0];
-           });
+        // // var account = accounts[0];
+        //    });
           });
          
       return App.bindEvents();
