@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   <title>Home</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icon/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icon/mobirise-icons.css" type="text/css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/cssbootstrap-grid.min.css">
@@ -45,7 +45,7 @@
                          <img src="images/ExcavationsCenter.png" alt="#" style="height: 3.8rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="#">مركز تنظيم الحفريات</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html">مركز تنظيم الحفريات</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -115,45 +115,45 @@
                 </div>
                 <div data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="#" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="EQEueTKQtr1LX6/Yiz+ro++FR/U2g3MqRRp4R9g5XqdS04SPfAJPrDSUW9+pTb/idd4Ebiu/meK9bbjXo+5XChRAPgylkIcNXWZ2WLz6I/4AiG+2i+fdvKb+qi3fXl85">
+                    <!-- <form action="#" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="EQEueTKQtr1LX6/Yiz+ro++FR/U2g3MqRRp4R9g5XqdS04SPfAJPrDSUW9+pTb/idd4Ebiu/meK9bbjXo+5XChRAPgylkIcNXWZ2WLz6I/4AiG+2i+fdvKb+qi3fXl85">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">شكراً لك!</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="dragArea row">
                             <div class="col-md-6  form-group" data-for="name">
                                 الاسم
-                                <input type="text" name="name" placeholder="Name" data-form-field="Name" required="required" class="form-control input display-7" id="name-form4-9">
+                                <input type="text" id="name" name="name" placeholder="Name" data-form-field="Name" required="required" class="form-control input display-7" id="name-form4-9">
                             </div>
                             <div class="col-md-6  form-group" data-for="location">
                                 الموقع
-                                <input type="text" name="location" placeholder="location" data-form-field="location" required="required" class="form-control input display-7" id="name-form4-9">
+                                <input type="text" id="location" name="location" placeholder="location" data-form-field="location" required="required" class="form-control input display-7" id="name-form4-9">
                             </div>
                         
                             <div class="col-md-6  form-group" data-for="Length">
                                 الطول
-                                <input type="number" name="length" placeholder="Length In Meters" data-form-field="Length" required="required" class="form-control input display-7" id="form4-9">
+                                <input type="number" id="length" name="length" placeholder="Length In Meters" data-form-field="Length" required="required" class="form-control input display-7" id="form4-9">
                             </div>
                             <div class="col-md-6  form-group" data-for="Depth">
-                                العرض
-                                <input type="number" name="Depth" placeholder="Depth In Meters" data-form-field="Depth" required="required" class="form-control input display-7" id="form4-9">
+                                العمق
+                                <input type="number" id="depth" name="Depth" placeholder="Depth In Meters" data-form-field="Depth" required="required" class="form-control input display-7" id="form4-9">
                             </div>
                             <div class="col-md-6  form-group" data-for="StartDate">
                                 تاريخ البداية
-                                <input type="date" name="StartDate" placeholder="Start Date" data-form-field="StartDate" required="required" class="form-control input display-7" id="form4-9">
+                                <input type="date" id="sDate" name="StartDate" placeholder="Start Date" data-form-field="StartDate" required="required" class="form-control input display-7" id="form4-9">
                             </div>
                             <div class="col-md-6  form-group" data-for="EndDate">
                                تاريخ النهاية
-                                <input type="date" name="EndDate" placeholder="End Date" data-form-field="EndDate" required="required" class="form-control input display-7" id="form4-9">
+                                <input type="date" id="eDate" name="EndDate" placeholder="End Date" data-form-field="EndDate" required="required" class="form-control input display-7" id="form4-9">
                             </div>
                             <div data-for="cost" class="col-md-6  form-group">
                                 التكلفة
-                                <input type="text" name="Cost" placeholder="Cost" data-form-field="cost" class="form-control input display-7" required="required" id="number-form4-9">
+                                <input type="text" id="cost" name="Cost" placeholder="Cost" data-form-field="cost" class="form-control input display-7" required="required" id="number-form4-9">
                             </div>
                             
                             <div class="col-md-12 input-group-btn  mt-2 align-center">
-                                <button type="submit" class="btn btn-primary btn-form display-4">تقديم</button>
+                                <button type="submit" id="buttonS" class="btn btn-primary btn-form display-4">تقديم</button>
                             </div>
                         </div>
                     </form><!---Formbuilder Form--->
@@ -200,7 +200,7 @@
             <div class="media-container-row mbr-white">
                 <div class="col-md-6 copyright">
                     <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2019 Excavations - All Rights Reserved
+                        © جميع الحقوق محفوظة 2019
                     </p>
                 </div>
                 <div class="col-md-6">

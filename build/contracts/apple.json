@@ -7288,12 +7288,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xd3A7568a8e86a30A65091379fF885E1518fe56e3",
-      "transactionHash": "0x59b9bc7a63710fd93812509c48719e975d5d88e2d784f81cde332434ce213b32"
+      "address": "0xB7c9370263353d2cEC9211616B0D5f9CED25FD10",
+      "transactionHash": "0x77db2f44da19f1ced05c58ae34e19ced796d2dd521b236b74a7b287dd305c21f"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-07-21T11:01:35.132Z",
+  "updatedAt": "2019-07-22T06:20:43.658Z",
   "devdoc": {
     "methods": {}
   },
