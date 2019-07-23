@@ -54,7 +54,7 @@ mapping (address => uint) public AppleAdress;
     }
 
         function ArrayLength () public view returns (uint) {
-            return apples.length;
+            return uint(apples.length);
         }
 
    
